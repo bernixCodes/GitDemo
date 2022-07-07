@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My app</title>
+    <meta charset="UTF-8" />
+    <script type="text/javascript">
+      function counter() {
+        const targetNumber = document.getElementById("targetId").value;
+        for (i = 0; i <= targetNumber; i++) {
+         document.write(i)
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div>Given a number n, print the numbers till n</div>
+    <div>
+      <input type="text" name="targetNumber" id="targetId" />
+      <input onclick="counter()" type="button" value="Click Me" />
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
